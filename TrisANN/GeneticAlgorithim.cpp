@@ -106,7 +106,7 @@ NeuralNetwork GeneticAlgorithim::oneGeneration()
             {
                 population[i].weights[j] = population[p2].weights[j];
 			}
-
+            mutate(i);
 			alive[i] = true;
 		}
 	}
@@ -117,10 +117,10 @@ NeuralNetwork GeneticAlgorithim::oneGeneration()
     //}
 
 	//Mutation
-	for (int i = 0; i < POPULATION; i++)
-	{
-		mutate(i);
-	}
+	//for (int i = 0; i < POPULATION; i++)
+	//{
+	//	mutate(i);
+	//}
 
 	//Game game;
 	/*int fit1;
